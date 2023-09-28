@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: fill-users-table-by-data
+      author: Olexii
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column: { name: "email", value: "Alice111@gmail.com" }
+              - column: { name: "password", value: "$2a$12$zmLqQy8d2XyJMcY81P.oQ.b1vCsL8EJAiLvlODUICtQKBh7VJQ6U6" } # "111"}
+              - column: { name: "birth_date", value: "1990-01-15" }
+              - column: { name: "first_name", value: "Alice" }
+              - column: { name: "last_name", value: "Molly" }
+              - column: { name: "address", value: "Golosiivska, 10/1" }
+              - column: { name: "phone", value: "+380931111111" }
+        - insert:
+            tableName: users
+            columns:
+              - column: { name: "email", value: "Bob222@gmail.com" }
+              - column: { name: "password", value: "$2a$12$P/6fNMUiE9C8rPFymunCS.XUGxJMBcbbVxsxIDb8.vQp3e9fkueQC" } # "222"}
+              - column: { name: "birth_date", value: "1985-05-20" }
+              - column: { name: "first_name", value: "Bob" }
+              - column: { name: "last_name", value: "Depp" }
+              - column: { name: "address", value: "Pochaina, 41/20" }
+              - column: { name: "phone", value: "+380932222222" }
+        - insert:
+            tableName: users
+            columns:
+              - column: { name: "email", value: "Jhon333@gmail.com" }
+              - column: { name: "password", value: "$2a$12$cyV11p9/THIMjL7qiMMGMOZbmhXu9XBEQKoS/s7oIhu7/7qGBb6ZC" } # "333"}
+              - column: { name: "birth_date", value: "1993-09-05" }
+              - column: { name: "first_name", value: "Jhon" }
+              - column: { name: "last_name", value: "Tremor" }
+              - column: { name: "address", value: "Solomianska, 16/17" }
+              - column: { name: "phone", value: "+380933333333" }
